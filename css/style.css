@@ -7,28 +7,61 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-    padding-top: 50px;
+body{
+    background-color: beige;
 }
+
+
+.title-game{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.btn{
+    text-align: center;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 20px;
+    background-color: darkkhaki;
+}
+
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
+    max-width: 65%;
 }
 
 .cell {
     aspect-ratio: 1 / 1;
     width: calc(100% / 10);
-    border: 1px solid black;
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 }
 
-.bg-selected{
+.bg-blue{
     background-color: rgb(91, 168, 236);
+}
+
+.bg-red {
+    background-color: red;
 }
